@@ -1,7 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: $size-width;
   height: 406px;
   border: 1px solid $color-White;
   border-radius: 5px;
@@ -25,8 +25,8 @@
   &__title {
     display: block;
     font-size: 12px;
-    line-height: 18px;
     font-weight: 500;
+    line-height: 18px;
     color: $color-Main-accent;
     margin-top: 40px;
   }
@@ -77,18 +77,10 @@
     }
   }
 
-  &:hover &__title {
-    color: #34568b;
-  }
-
-  &:hover {
-    transform: scale(1.2);
-  }
-
   &__link {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 166px;
     height: 40px;
     background-color: $color-Blue-accent;
@@ -99,11 +91,19 @@
     font-size: 14px;
     line-height: 16px;
     transition: all 0.3s ease;
+  }
 
-    &:hover {
-      background-color: $color-White;
-      border: 1px solid $color-Blue-accent;
-      color: $color-Blue-accent;
-    }
+  &:hover &__title {
+    color: $color-hover;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:hover &__link {
+    border: 1px solid $color-Blue-accent;
+    background-color: $color-White;
+    color: $color-Blue-accent;
   }
 }

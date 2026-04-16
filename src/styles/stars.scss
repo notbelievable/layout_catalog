@@ -1,12 +1,12 @@
 .stars {
   display: flex;
   align-items: center;
-  width: 96px;
+  width: $stars-width;
 
   &__item {
     background-image: url(../images/star.svg);
-    width: 16px;
-    height: 16px;
+    width: $star-size;
+    height: $star-size;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 0.5px;
