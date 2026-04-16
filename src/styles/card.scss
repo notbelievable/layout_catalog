@@ -7,7 +7,7 @@
   border-radius: 5px;
   padding: 0 16px;
   box-sizing: border-box;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
 
   &__image {
@@ -22,7 +22,7 @@
     }
   }
 
-  &__model {
+  &__title {
     display: block;
     font-size: 12px;
     line-height: 18px;
@@ -75,14 +75,14 @@
       line-height: 18px;
       color: $color-Main-accent;
     }
+  }
 
-    &:hover &__model {
-      color: #34568b;
-    }
+  &:hover &__title {
+    color: #34568b;
+  }
 
-    &:hover {
-      transform: scale(1.2);
-    }
+  &:hover {
+    transform: scale(1.2);
   }
 
   &__link {
@@ -98,7 +98,7 @@
     text-decoration: none;
     font-size: 14px;
     line-height: 16px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 
     &:hover {
       background-color: $color-White;

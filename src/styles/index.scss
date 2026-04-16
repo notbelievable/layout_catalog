@@ -31,19 +31,19 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(1, $size-width);
   gap: 46px 48px;
   padding: 50px 40px;
 
   @media (min-width: 488px) {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, $size-width);
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, $size-width);
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, $size-width);
   }
 }

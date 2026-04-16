@@ -20,12 +20,12 @@
     align-items: center;
     justify-content: center;
     height: 60px;
-    color: #060b35;
+    color: $color-Main-accent;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
     padding: 0;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 
     &:hover,
     &.is-active {
