@@ -29,6 +29,7 @@
     line-height: 18px;
     color: $color-Main-accent;
     margin-top: 40px;
+    transition: color 0.3s ease;
   }
 
   &__code {
